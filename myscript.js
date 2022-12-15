@@ -165,7 +165,7 @@ createApp({
                     ],
                 }
             ]
-                                                                                                            
+        }                                                                                                    
             
             
             
@@ -174,9 +174,13 @@ createApp({
     },
               
 
-    methods {
-       
+    methods:{
+
     }
+        
+    
+       
+    
 }) .mount('#app');
 
 
