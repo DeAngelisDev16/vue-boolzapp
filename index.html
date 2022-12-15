@@ -15,6 +15,7 @@
                 <div class="contacts_list">
                     <ul>
                         <li class="contact" v-for="contact in contacts">
+                            <img :src="`./img/avatar${contact.avatar}.jpg`" class="sidebar_imgs" alt="">
                             <span>{{contact.name}}</span>
                         </li>
                     </ul>
