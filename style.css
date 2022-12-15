@@ -24,11 +24,24 @@ body{
 
 .main_chat{
     width: 550px;
-    background-color: green;
+    background-image: url('./img/mine.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.left_header, .right_header{
+.left_header, .right_header, .input_chat_box{
     height:50px;
     background-color: grey;
     border:1px solid black;
 }
+
+.contacts_list ul{
+    list-style: none;
+}
+
+.contact{
+    height: 50px;
+    background-color: aqua;
+}
+    
