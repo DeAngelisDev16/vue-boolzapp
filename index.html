@@ -14,9 +14,9 @@
                 <div class="left_header">Left-header</div>
                 <div class="contacts_list">
                     <ul>
-                        <li class="contact" v-for="contact in contacts">
+                        <li class="contact d-flex" v-for="contact in contacts">
                             <img :src="`./img/avatar${contact.avatar}.jpg`" class="sidebar_imgs" alt="">
-                            <span>{{contact.name}}</span>
+                            <p>{{contact.name}}</p>
                         </li>
                     </ul>
                 </div>
@@ -24,6 +24,11 @@
             </div>
             <div class="main_chat">
                 <div class="right_header">right-header</div>
+                <div class="main_chat_box">
+                    <div class="sent_message">Ciao grande!</div>
+                    <div class="received_message">Ciao grandissimo!</div>
+                    
+                </div>
                 <div class="input_chat_box">Scrivi messaggio</div>
 
             </div>

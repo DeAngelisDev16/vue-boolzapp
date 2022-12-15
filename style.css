@@ -5,35 +5,61 @@
 }
 
 body{
-    height: 100vh;
+    max-height: 100vh;
 }
 
 .wrapper{
     width: 900px ;
     height: 500px;
-    background-color: aqua;
     margin:5rem auto;
     display: flex;
 }
+    
 
 .left_chat{
     width: 350px;
-    background-color: magenta;
+    
 
 }
 
 .main_chat{
     width: 550px;
+    height: 100%;
     background-image: url('./img/mine.jpg');
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
 }
 
-.left_header, .right_header, .input_chat_box{
-    height:50px;
-    background-color: grey;
-    border:1px solid black;
+.main_chat_box{
+    
+    flex-grow: 4;
+}
+
+.main_chat_box::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+    
+    
+    
+
+.left_header, .right_header{
+height:50px;
+background-color: #EAEAEA;
+border: .5px solid black;
+
+
+}
+
+.input_chat_box{
+    height: 50px;
+    background-color: #F3EEEA ;
+    
+
+    
+    
 }
 
 .contacts_list ul{
@@ -41,11 +67,49 @@ body{
 }
 
 .contact{
-    height: 50px;
-    background-color: aqua;
+    padding: 0.3rem;
+    border: .5px solid lightgray;
+    
 }
 
 .sidebar_imgs{
     width: 10%;
+    border-radius: 50%;
 }
+
+.contact p{
+    padding-left: 0.5rem;
+}
+
+.received_message{
+    padding: 1rem;
+    background-color: lightgray;
+    width: 30%;
+    border-radius: 2rem;
+    margin-top: 4.5rem;
+    margin-left: 0.5rem;
     
+    
+}
+
+.sent_message{
+    background-color: green;
+    padding: 1rem;
+    width: 30%;
+    border-radius: 2rem;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+
+}
+
+/* UTILITIES */
+
+.d-flex{
+    display: flex;
+}
+
+/* COLORS */
+/* header(s): #EAEAEA;
+footer(input-text): #F3EEEA
+attiva-notifiche: #8EDAFC */
