@@ -13,7 +13,7 @@
         <div class="wrapper">
             <div class="left_chat">
                 <div class="left_header d-flex">
-                    <div class="left_header_left">
+                    <div class="left_header_left d-flex align-center">
                         <img src="./img/avatar_io.jpg" class="sidebar_imgs" alt="">
                         <span>Sofia</span>
                     </div>
@@ -37,19 +37,28 @@
                     <input type="text" placeholder="Cerca o inizia una nuova chat" size="50">
                 </div>
                 <div class="contacts_list">
-                    <ul>
+                    <ul>  <!-- MILESTONE 1 -->
                         <li class="contact d-flex" v-for="contact in contacts">
                             <img :src="`./img/avatar${contact.avatar}.jpg`" class="sidebar_imgs" alt="">
                             <p>{{contact.name}}</p>
                         </li>
+                            
+                           
                     </ul>
                 </div>
 
             </div>
             <div class="main_chat">
-                <div class="right_header">right-header</div>
+                <div class="right_header">
+                   <div class="right_header_left">
+
+                   </div>
+                   <div class="right_header_right"></div>
+                </div>
                 <div class="main_chat_box">
-                    <div class="sent_message">Ciao grande!</div>
+                    <div class="sent_message" v-for="message in contacts[0].messages">
+                        {{message.message}}
+                    </div>
                     <div class="received_message">Ciao grandissimo!</div>
                     
                 </div>
