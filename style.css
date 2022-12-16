@@ -62,10 +62,35 @@ background-color: #EAEAEA;
     height: 50px;
     background-color: #F3EEEA ;
     
+}
+
+.notification_banner{
+    background-color: #8EDAFC ;
+    height: 50px;
+}
+
+.notification_banner div{
+    padding: .5rem;
+    font-size: .9rem;
+
+}
+
+.notification_banner .fa-solid{
+    color: #8EDAFC;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+
+}
+
+.notification_banner a{
+    color: grey;
+    font-size: .8rem;
+}
+
+
 
     
     
-}
 
 .contacts_list ul{
     list-style: none;
