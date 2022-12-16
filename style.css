@@ -6,6 +6,7 @@
 
 body{
     max-height: 100vh;
+    
 }
 
 .wrapper{
@@ -48,9 +49,13 @@ body{
 .left_header, .right_header{
 height:50px;
 background-color: #EAEAEA;
-border: .5px solid black;
 
 
+
+}
+
+.left_header{
+    border-right: 1px solid grey;
 }
 
 .input_chat_box{
@@ -75,6 +80,7 @@ border: .5px solid black;
 .sidebar_imgs{
     width: 10%;
     border-radius: 50%;
+    padding-left: 0.3rem;
 }
 
 .contact p{
@@ -82,24 +88,24 @@ border: .5px solid black;
 }
 
 .received_message{
-    padding: 1rem;
-    background-color: lightgray;
+    padding: .5rem;
+    background-color: #FFFFFF;
     width: 30%;
-    border-radius: 2rem;
+    border-radius: .5rem;
     margin-top: 4.5rem;
-    margin-left: 0.5rem;
+    margin-left: 3rem;
     
     
 }
 
 .sent_message{
-    background-color: green;
-    padding: 1rem;
+    background-color: #D5F9BA ;
+    padding: 0.5rem;
     width: 30%;
-    border-radius: 2rem;
+    border-radius: .5rem;
     float: right;
     margin-top: 1rem;
-    margin-right: 0.5rem;
+    margin-right: 3rem;
 
 }
 
@@ -112,4 +118,6 @@ border: .5px solid black;
 /* COLORS */
 /* header(s): #EAEAEA;
 footer(input-text): #F3EEEA
-attiva-notifiche: #8EDAFC */
+attiva-notifiche: #8EDAFC
+sent-message: #D5F9BA 
+recived-message: #FFFFFF*/
