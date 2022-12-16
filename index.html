@@ -56,10 +56,12 @@
                    <div class="right_header_right"></div>
                 </div>
                 <div class="main_chat_box">
-                    <div class="sent_message">
+                    <div  v-for="message in contacts[activeIndex].messages" :class="(message.status==='sent') ? 'sent_message' : 'received_message' ">
+                        {{message.message}}
+
                         
                     </div>
-                    <div class="received_message" v-for="message in contacts[activeIndex].messages">{{message.message}}</div>
+                    <!-- <div  v-for="message in contacts[activeIndex].messages" :class="(status==='received') ? 'received_message' : '' " >{{message.message}}</div> -->
                     
                 </div>
                 <div class="input_chat_box">Scrivi messaggio</div>
