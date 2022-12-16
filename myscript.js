@@ -3,6 +3,7 @@ const {createApp} = Vue
 createApp({
     data() {
         return{
+            activeIndex: 0,
             contacts: [
                 {
                     name: 'Michele',
@@ -175,6 +176,10 @@ createApp({
               
 
     methods:{
+        showConversation(currentIndex){
+            this.activeIndex = currentIndex;
+         
+        }
 
     }
         

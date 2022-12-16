@@ -38,7 +38,7 @@
                 </div>
                 <div class="contacts_list">
                     <ul>  <!-- MILESTONE 1 -->
-                        <li class="contact d-flex" v-for="contact in contacts">
+                        <li class="contact d-flex" v-for="(contact,index) in contacts" @click="showConversation(index)">
                             <img :src="`./img/avatar${contact.avatar}.jpg`" class="sidebar_imgs" alt="">
                             <p>{{contact.name}}</p>
                         </li>
@@ -56,10 +56,10 @@
                    <div class="right_header_right"></div>
                 </div>
                 <div class="main_chat_box">
-                    <div class="sent_message" v-for="message in contacts[0].messages">
-                        {{message.message}}
+                    <div class="sent_message">
+                        
                     </div>
-                    <div class="received_message">Ciao grandissimo!</div>
+                    <div class="received_message" v-for="message in contacts[activeIndex].messages">{{message.message}}</div>
                     
                 </div>
                 <div class="input_chat_box">Scrivi messaggio</div>
