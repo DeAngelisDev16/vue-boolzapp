@@ -81,6 +81,7 @@ background-color: #EAEAEA;
     width: 10%;
     border-radius: 50%;
     padding-left: 0.3rem;
+    
 }
 
 .contact p{
@@ -109,10 +110,22 @@ background-color: #EAEAEA;
 
 }
 
+.fa-solid{
+    padding: .5rem;
+}
+
 /* UTILITIES */
 
 .d-flex{
     display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
 }
 
 /* COLORS */
