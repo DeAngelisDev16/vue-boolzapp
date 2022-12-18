@@ -209,12 +209,7 @@ createApp({
                 message: 'Ok',
                 status: 'received',
             }
-            if(newAutoMessage.message = 'Ok'){
-                this.contacts[this.activeIndex].messages.push(newAutoMessage);
-                
-            }else{
-                
-            }
+            this.contacts[this.activeIndex].messages.push(newAutoMessage);
 
         }
 
