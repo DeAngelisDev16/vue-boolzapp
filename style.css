@@ -138,7 +138,12 @@ background-color: #EAEAEA;
     float: right;
     margin-top: 1rem;
     margin-right: 3rem;
+    
 
+}
+.input_chat_box input{
+    padding: .2rem;
+    
 }
 
 .fa-solid{
@@ -157,6 +162,10 @@ background-color: #EAEAEA;
 
 .align-center{
     align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
 }
 
 

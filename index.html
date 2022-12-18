@@ -64,7 +64,9 @@
                     <!-- <div  v-for="message in contacts[activeIndex].messages" :class="(status==='received') ? 'received_message' : '' " >{{message.message}}</div> -->
                     
                 </div>
-                <div class="input_chat_box">Scrivi messaggio</div>
+                <div class="input_chat_box d-flex align-center justify-center">
+                    <input type="text" size="70" placeholder="Scrivi un messaggio" v-model="myNewMessage" @keyup.enter="addNewInput()">
+                </div>
 
             </div>
         </div>

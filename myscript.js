@@ -3,6 +3,8 @@ const {createApp} = Vue
 createApp({
     data() {
         return{
+            
+            myNewMessage:'',
             activeIndex: 0,
             contacts: [
                 {
@@ -178,8 +180,27 @@ createApp({
     methods:{
         showConversation(currentIndex){
             this.activeIndex = currentIndex;
+            //alert(currentIndex)
          
+        },
+
+        addNewInput(){
+            let newMessage = {
+                date: '10/01/2020 15:51:00',
+                message: this.myNewMessage,
+                status: 'sent',
+            }
+            if(newMessage.message != ''){
+                this.contacts[this.activeIndex].messages.push(newMessage);
+                this.myNewMessage = '';
+            }else{
+                alert("Non hai inserito alcun messaggio");
+            }
+            
+            
+            
         }
+
 
     }
         
@@ -189,9 +210,11 @@ createApp({
 }) .mount('#app');
 
 
-/* Milestone 1
 
-Replica della grafica con la possibilità di avere messaggi scritti dall’utente (verdi) e dall’interlocutore (bianco) assegnando due classi CSS diverse
-Visualizzazione dinamica della lista contatti: tramite la direttiva v-for, visualizzare nome e immagine di ogni contatto */
+
+
+//nb. keyup.enter="nomeFunzione()" ======> X Milestone3
+
+
     
     
