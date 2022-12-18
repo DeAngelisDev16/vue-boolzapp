@@ -38,11 +38,7 @@ body{
     flex-grow: 4;
 }
 
-.main_chat_box::after{
-    content: "";
-    display: table;
-    clear: both;
-}
+
     
     
     
@@ -123,21 +119,25 @@ background-color: #EAEAEA;
     padding: .5rem;
     background-color: #FFFFFF;
     width: 30%;
+    clear: both;
     border-radius: .5rem;
     margin-top: 4.5rem;
     margin-left: 3rem;
     
     
 }
+    
 
 .sent_message{
     background-color: #D5F9BA ;
     padding: 0.5rem;
     width: 30%;
     border-radius: .5rem;
+    clear: both;
     float: right;
     margin-top: 1rem;
     margin-right: 3rem;
+
     
 
 }

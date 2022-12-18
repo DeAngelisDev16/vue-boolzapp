@@ -196,9 +196,26 @@ createApp({
             }else{
                 alert("Non hai inserito alcun messaggio");
             }
+
+            setTimeout(this.autoMessage, 1000);
             
             
             
+        },
+
+        autoMessage(){
+            let newAutoMessage = {
+                date: '10/01/2020 15:51:00',
+                message: 'Ok',
+                status: 'received',
+            }
+            if(newAutoMessage.message = 'Ok'){
+                this.contacts[this.activeIndex].messages.push(newAutoMessage);
+                
+            }else{
+                
+            }
+
         }
 
 
