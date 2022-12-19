@@ -63,12 +63,16 @@
                 <div class="right_header d-flex align-center space-between">
                    <div class="right_header_left d-flex align-center" ><!-- active contact -->
                     <img :src="`./img/avatar${contacts[activeIndex].avatar}.jpg`" class="sidebar_imgs" alt="">
-                    <p>{{contacts[activeIndex].name}}</p>
+                    <div>
+                        <p>{{contacts[activeIndex].name}}</p>
+                        <p class="contacts_access">Ultimo accesso oggi alle 12:00</p>
+
+                    </div>
                     
                     
 
                    </div>
-                   <div class="right_header_right">
+                   <div class="right_header_right d-flex align-center">
                     <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                     <i class="fa-solid fa-paperclip"></i>
                     <i class="fa-solid fa-ellipsis-vertical"></i>

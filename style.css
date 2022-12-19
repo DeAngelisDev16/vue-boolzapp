@@ -136,7 +136,7 @@ background-color: #EAEAEA;
     
 }
 
-.contact p{
+.contact p, .right_header_left p{
     padding-left: 0.5rem;
 }
 
