@@ -45,7 +45,13 @@
                     <ul>  <!-- MILESTONE 1 -->
                         <li class="contact d-flex" v-for="(contact,index) in contacts" @click="showConversation(index)">
                             <img :src="`./img/avatar${contact.avatar}.jpg`" class="sidebar_imgs" alt="">
-                            <p>{{contact.name}}</p>
+                            <div>
+                                <p>{{contact.name}}</p>
+                                <p class="contacts_access">Ultimo messaggio inviato</p>
+
+                            </div>
+                            <span class="access_time">12:00</span>
+                            
                         </li>
                             
                            
@@ -54,11 +60,21 @@
 
             </div>
             <div class="main_chat">
-                <div class="right_header">
-                   <div class="right_header_left">
+                <div class="right_header d-flex align-center space-between">
+                   <div class="right_header_left d-flex align-center" ><!-- active contact -->
+                    <img :src="`./img/avatar${contacts[activeIndex].avatar}.jpg`" class="sidebar_imgs" alt="">
+                    <p>{{contacts[activeIndex].name}}</p>
+                    
+                    
 
                    </div>
-                   <div class="right_header_right"></div>
+                   <div class="right_header_right">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                        
+
+                   </div>
                 </div>
                 <div class="main_chat_box">
                     <div  v-for="message in contacts[activeIndex].messages" :class="(message.status==='sent') ? 'sent_message' : 'received_message' ">

@@ -7,6 +7,11 @@
 body{
     max-height: 100vh;
     font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(to bottom,
+    #009688 0px,
+    #009688 15vh,
+    #dddbd1 15vh,
+    #d2dbdc 100%);
     
     
 }
@@ -21,7 +26,9 @@ body{
 
 .left_chat{
     width: 350px;
-    border: .3px solid lightgray
+    border: .3px solid lightgray;
+    background-color: #FFFFFF;
+
 }
     
 
@@ -90,6 +97,21 @@ background-color: #EAEAEA;
     padding: .5rem;
 }
 
+.contacts_access{
+    font-size: 10px;
+    color: grey;
+}
+
+.access_time{
+    padding-left: 8rem;
+    font-size: 10px;
+    color: grey;
+    
+}
+
+.fa-solid, .fa-regular{
+    color: grey;
+}
 
 
 
@@ -98,6 +120,7 @@ background-color: #EAEAEA;
 
 .contacts_list ul{
     list-style: none;
+    
 }
 
 .contact{
