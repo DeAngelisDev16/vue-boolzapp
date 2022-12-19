@@ -6,6 +6,8 @@
 
 body{
     max-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    
     
 }
 
@@ -142,7 +144,7 @@ background-color: #EAEAEA;
 
 }
 .input_chat_box input{
-    padding: .2rem;
+    padding: .4rem;
     
 }
 
@@ -158,6 +160,10 @@ background-color: #EAEAEA;
 
 .space-between{
     justify-content: space-between;
+}
+
+.space-around{
+    justify-content: space-around;
 }
 
 .align-center{
