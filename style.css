@@ -28,6 +28,7 @@ body{
     width: 350px;
     border: .3px solid lightgray;
     background-color: #FFFFFF;
+    overflow-y: scroll;
 
 }
     
@@ -43,8 +44,10 @@ body{
 }
 
 .main_chat_box{
-    
     flex-grow: 4;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
 }
 
 
@@ -125,15 +128,24 @@ background-color: #EAEAEA;
 
 .contact{
     padding: 0.3rem;
-    border-bottom: .3px solid lightgray;
-    
 }
 
+.active{
+    background-color: #e9ebeb;
+}
+    
+    
+
 .sidebar_imgs{
-    width: 10%;
+    width: 15%;
     border-radius: 50%;
     padding-left: 0.3rem;
     
+}
+
+.active_chat_img{
+    width: 10%;
+    border-radius: 50%;
 }
 
 .contact p, .right_header_left p{

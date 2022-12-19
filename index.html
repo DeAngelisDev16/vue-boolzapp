@@ -43,7 +43,7 @@
                 </div>
                 <div class="contacts_list">
                     <ul>  <!-- MILESTONE 1 -->
-                        <li class="contact d-flex" v-for="(contact,index) in contacts" @click="showConversation(index)">
+                        <li class="contact d-flex" v-for="(contact,index) in contacts" @click="showConversation(index)" :class="(activeIndex === index) ? 'active' : '' ">
                             <img :src="`./img/avatar${contact.avatar}.jpg`" class="sidebar_imgs" alt="">
                             <div>
                                 <p>{{contact.name}}</p>
@@ -62,7 +62,7 @@
             <div class="main_chat">
                 <div class="right_header d-flex align-center space-between">
                    <div class="right_header_left d-flex align-center" ><!-- active contact -->
-                    <img :src="`./img/avatar${contacts[activeIndex].avatar}.jpg`" class="sidebar_imgs" alt="">
+                    <img :src="`./img/avatar${contacts[activeIndex].avatar}.jpg`" class="active_chat_img" alt="">
                     <div>
                         <p>{{contacts[activeIndex].name}}</p>
                         <p class="contacts_access">Ultimo accesso oggi alle 12:00</p>
